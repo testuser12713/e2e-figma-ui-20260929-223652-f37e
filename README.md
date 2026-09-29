@@ -55,8 +55,9 @@ npm test
 
 ## Features
 
-- **Dashboard** (Initial-Tab): Demo-Button, der beim Tippen den sichtbaren
-  Text umschaltet (Ziel des App-Skeletts).
+- **Dashboard** (Initial-Tab): Begrüßung, Kennzahlen (KPIs) und Statistiken aus
+  den statischen Beispieldaten sowie ein seitliches Menü mit Zugang zu
+  Statistiken, Kontoeinstellungen und Hilfe.
 - **Money Management**: Stub-Screen für die Transaktionsliste.
 - **Time Management**: Stub-Screen für die Zeiterfassungsliste.
 - **Bottom-Tab-Navigation** zwischen den drei Screens.

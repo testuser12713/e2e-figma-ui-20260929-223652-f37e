@@ -9,21 +9,19 @@ jest.mock(
 );
 
 describe('App', () => {
-  it('renders the dashboard screen with the demo button', async () => {
+  it('renders the dashboard screen', async () => {
     const screen = await render(<App />);
 
-    expect(screen.getByTestId('dashboard-demo-button')).toBeTruthy();
-    expect(await screen.findByText('Tap to toggle')).toBeTruthy();
+    expect(screen.getByTestId('dashboard-menu-button')).toBeTruthy();
+    expect(await screen.findByText('Welcome')).toBeTruthy();
   });
 
-  it('toggles the demo button text when pressed', async () => {
+  it('opens the dashboard menu from the header button', async () => {
     const screen = await render(<App />);
 
-    const button = screen.getByTestId('dashboard-demo-button');
-    expect(await screen.findByText('Tap to toggle')).toBeTruthy();
+    await fireEvent.press(screen.getByTestId('dashboard-menu-button'));
 
-    await fireEvent.press(button);
-
-    expect(await screen.findByText('Toggled on')).toBeTruthy();
+    expect(await screen.findByText('Sophie Garnier')).toBeTruthy();
+    expect(await screen.findByText('Account Settings')).toBeTruthy();
   });
 });

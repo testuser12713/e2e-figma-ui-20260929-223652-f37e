@@ -1,4 +1,4 @@
-import { TextStyle, ViewStyle } from 'react-native';
+import { TextStyle } from 'react-native';
 
 export const colors = {
   bg: '#F4F5FA',
@@ -70,6 +70,12 @@ export const typography = {
   body: {
     fontFamily: fontFamily.body,
     fontWeight: '400',
+  } as TextStyle,
+  text40: {
+    fontFamily: fontFamily.heading,
+    fontWeight: '700',
+    fontSize: 40,
+    lineHeight: 51,
   } as TextStyle,
   text25: {
     fontFamily: fontFamily.heading,
