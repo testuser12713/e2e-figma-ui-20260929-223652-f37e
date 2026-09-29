@@ -213,8 +213,9 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.space6,
   },
   greeting: {
-    ...typography.text25,
+    ...typography.text40,
     color: colors.fg,
+    textAlign: 'center',
   },
   searchField: {
     flexDirection: 'row',
