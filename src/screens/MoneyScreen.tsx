@@ -7,6 +7,7 @@ import {
   Text,
   View,
 } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { transactions } from '../data/transactions';
@@ -76,9 +77,10 @@ const MoneyScreen: React.FC = () => {
                 source={require('../../design/figma/assets/noun-back-1227057.png')}
                 style={styles.backChevron}
               />
-              <View style={styles.avatar}>
-                <Text style={styles.avatarLetter}>R</Text>
-              </View>
+              <Image
+                source={require('../../design/figma/assets/noun-user-1335326.png')}
+                style={styles.userIcon}
+              />
             </View>
           </View>
           <View style={styles.summary}>
@@ -99,18 +101,25 @@ const MoneyScreen: React.FC = () => {
       </ScrollView>
 
       <View style={styles.fabWrap} pointerEvents="box-none">
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel="Add transaction"
-          testID="add-transaction-button"
-          onPress={() => {}}
-          style={styles.fab}
-        >
-          <View style={styles.fabPlus}>
-            <View style={styles.fabPlusVertical} />
-            <View style={styles.fabPlusHorizontal} />
-          </View>
-        </Pressable>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Add transaction"
+            testID="add-transaction-button"
+            onPress={() => {}}
+            style={styles.fab}
+          >
+            <LinearGradient
+              colors={[colors.accent, colors.accentDark]}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 0, y: 1 }}
+              style={styles.fabGradient}
+            >
+              <View style={styles.fabPlus}>
+                <View style={styles.fabPlusVertical} />
+                <View style={styles.fabPlusHorizontal} />
+              </View>
+            </LinearGradient>
+          </Pressable>
       </View>
     </View>
   );
@@ -153,25 +162,9 @@ const styles = StyleSheet.create({
     width: 11,
     height: 18,
   },
-  avatar: {
-    width: 51,
-    height: 51,
-    borderRadius: radii.pill,
-    backgroundColor: colors.accent,
-    alignItems: 'center',
-    justifyContent: 'center',
-    shadowColor: '#000000',
-    shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.16,
-    shadowRadius: 6,
-    elevation: 4,
-  },
-  avatarLetter: {
-    fontFamily: fontFamily.heading,
-    fontWeight: '700',
-    fontSize: 32,
-    lineHeight: 41,
-    color: colors.onAccent,
+  userIcon: {
+    width: 27,
+    height: 27,
   },
   summary: {
     paddingHorizontal: spacing.space5,
@@ -219,25 +212,25 @@ const styles = StyleSheet.create({
   rowCategory: {
     ...typography.text9,
     letterSpacing: 1.8,
-    color: colors.fgStrong,
+    color: '#000000',
   },
   rowTitle: {
     fontFamily: fontFamily.body,
     fontWeight: '100',
     fontSize: 12,
     lineHeight: 15,
-    color: colors.fgStrong,
+    color: '#000000',
   },
   rowDate: {
     ...typography.text9,
-    color: colors.fgStrong,
+    color: '#000000',
   },
   rowAmount: {
     fontFamily: fontFamily.body,
     fontWeight: '100',
     fontSize: 14,
     lineHeight: 18,
-    color: colors.fgStrong,
+    color: '#000000',
   },
   fabWrap: {
     position: 'absolute',
@@ -250,16 +243,19 @@ const styles = StyleSheet.create({
     width: 64,
     height: 64,
     borderRadius: radii.pill,
-    backgroundColor: colors.accent,
     borderWidth: 4,
     borderColor: colors.surface,
-    alignItems: 'center',
-    justifyContent: 'center',
+    overflow: 'hidden',
     shadowColor: '#000000',
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.16,
     shadowRadius: 40,
     elevation: 8,
+  },
+  fabGradient: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   fabPlus: {
     width: 20,
