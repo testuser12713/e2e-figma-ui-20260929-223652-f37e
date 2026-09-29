@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Time Management — BusinessHandler</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <div class="statusbar">
+      <span class="time">9:41</span>
+      <span class="status-icons">
+        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" stroke="#23233C" stroke-width="1.2"><path d="M1 8h2.5M3.5 5.5H7M6 3h3M9 8h2.5M11.5 5.5H15M13 3h3"/></svg>
+        <svg width="16" height="11" viewBox="0 0 16 11" fill="none" stroke="#23233C" stroke-width="1.2"><path d="M1 3.5a10 10 0 0 1 14 0M3.5 6a6 6 0 0 1 9 0M6 8.5a3 3 0 0 1 4 0"/><circle cx="8" cy="10" r="0.8" fill="#23233C"/></svg>
+        <svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="#23233C" stroke-opacity="0.4"/><rect x="2" y="2" width="16" height="8" rx="1.5" fill="#23233C"/><path d="M23 4v4" stroke="#23233C" stroke-width="1.2"/></svg>
+      </span>
+    </div>
+
+    <div class="screen">
+      <div class="topbar" data-od-id="topbar">
+        <a class="icon-btn" href="dashboard.html" aria-label="Back">
+          <svg width="11" height="18" viewBox="0 0 11 18" fill="none" stroke="#181461" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 1.5 2 9l7.5 7.5"/></svg>
+        </a>
+        <span class="icon-btn" aria-label="Profile">
+          <svg width="27" height="27" viewBox="0 0 27 27" fill="none" stroke="#23233C" stroke-width="1.5"><circle cx="13.5" cy="9.5" r="4.5"/><path d="M5 23c1.5-4.5 4.7-6.5 8.5-6.5S20.5 18.5 22 23"/></svg>
+        </span>
+      </div>
+
+      <div class="content">
+        <h2 style="font-family: var(--font-display); font-weight: 700; font-size: 16px; line-height: 19px; color: #1C1C1C;" data-od-id="title">My Appointments</h2>
+
+        <div class="tabs" data-od-id="tabs">
+          <a class="tab-link active" href="time-management.html" data-od-id="tab-upcoming">Upcoming</a>
+          <a class="tab-link inactive" href="time-management.html" data-od-id="tab-past">Past</a>
+        </div>
+
+        <div class="apt" data-od-id="apt-dentist">
+          <div class="apt-date">09/04/2020</div>
+          <div class="apt-row">
+            <span class="apt-title">
+              Dentist - Clara Odding
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#23233C" stroke-width="1.5"><circle cx="6" cy="6" r="5"/><path d="M6 5.5V9M6 3.5v.01"/></svg>
+            </span>
+            <a class="apt-modify" href="time-management-appointment.html" data-od-id="apt-modify-1">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#23233C" stroke-width="1.5" stroke-linejoin="round"><path d="M8.5 1.5l2 2L4 10l-2.5.5L2 8z"/></svg>
+              Modify
+            </a>
+          </div>
+        </div>
+
+        <div class="apt" data-od-id="apt-gym">
+          <div class="apt-date">10/04/2020</div>
+          <div class="apt-row">
+            <span class="apt-title">
+              Gym - Personal Trainer
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#23233C" stroke-width="1.5"><circle cx="6" cy="6" r="5"/><path d="M6 5.5V9M6 3.5v.01"/></svg>
+            </span>
+            <a class="apt-modify" href="time-management-appointment.html" data-od-id="apt-modify-2">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#23233C" stroke-width="1.5" stroke-linejoin="round"><path d="M8.5 1.5l2 2L4 10l-2.5.5L2 8z"/></svg>
+              Modify
+            </a>
+          </div>
+        </div>
+
+        <div class="apt" data-od-id="apt-meeting">
+          <div class="apt-date">11/04/2020</div>
+          <div class="apt-row">
+            <span class="apt-title">
+              Meeting - Project Alpha
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#23233C" stroke-width="1.5"><circle cx="6" cy="6" r="5"/><path d="M6 5.5V9M6 3.5v.01"/></svg>
+            </span>
+            <a class="apt-modify" href="time-management-appointment.html" data-od-id="apt-modify-3">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#23233C" stroke-width="1.5" stroke-linejoin="round"><path d="M8.5 1.5l2 2L4 10l-2.5.5L2 8z"/></svg>
+              Modify
+            </a>
+          </div>
+        </div>
+
+        <div class="apt" data-od-id="apt-dinner">
+          <div class="apt-date">12/04/2020</div>
+          <div class="apt-row">
+            <span class="apt-title">
+              Dinner - Anna &amp; Tom
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#23233C" stroke-width="1.5"><circle cx="6" cy="6" r="5"/><path d="M6 5.5V9M6 3.5v.01"/></svg>
+            </span>
+            <a class="apt-modify" href="time-management-appointment.html" data-od-id="apt-modify-4">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#23233C" stroke-width="1.5" stroke-linejoin="round"><path d="M8.5 1.5l2 2L4 10l-2.5.5L2 8z"/></svg>
+              Modify
+            </a>
+          </div>
+        </div>
+
+        <div style="margin-top: 32px;">
+          <a class="btn-primary" href="time-management-appointment.html" data-od-id="btn-add-appointment">Add a new appointment</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="tabbar" data-od-id="tabbar">
+      <a class="tab" href="dashboard.html" data-od-id="tab-home">
+        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3 10.5 11 3l8 7.5"/><path d="M5 9v9h12V9"/></svg>
+        <span class="tab-label">Home</span>
+      </a>
+      <a class="tab" href="money-management.html" data-od-id="tab-money">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3 7l1-4h11l1 4"/><path d="M3 7h13v9H3z"/><path d="M7 16v-5h5v5"/></svg>
+        <span class="tab-label">Money</span>
+      </a>
+      <span class="tab"></span>
+      <a class="tab active" href="time-management.html" data-od-id="tab-time">
+        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="4.5" r="3"/><path d="M1.5 17c1-3.5 2.5-5 4.5-5s3.5 1.5 4.5 5"/><path d="M10.5 10l1.5 1.5L15 9"/></svg>
+        <span class="tab-label">Time</span>
+      </a>
+    </nav>
+
+    <a class="fab" href="time-management-appointment.html" aria-label="Add appointment" data-od-id="fab">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0v20" stroke="#FFFFFF" stroke-width="3"/><path d="M0 10h20" stroke="#FFFFFF" stroke-width="3"/></svg>
+    </a>
+  </div>
+</body>
+</html>

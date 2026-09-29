@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard — BusinessHandler</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <div class="statusbar">
+      <span class="time">9:41</span>
+      <span class="status-icons">
+        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" stroke="#23233C" stroke-width="1.2"><path d="M1 8h2.5M3.5 5.5H7M6 3h3M9 8h2.5M11.5 5.5H15M13 3h3"/></svg>
+        <svg width="16" height="11" viewBox="0 0 16 11" fill="none" stroke="#23233C" stroke-width="1.2"><path d="M1 3.5a10 10 0 0 1 14 0M3.5 6a6 6 0 0 1 9 0M6 8.5a3 3 0 0 1 4 0"/><circle cx="8" cy="10" r="0.8" fill="#23233C"/></svg>
+        <svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="#23233C" stroke-opacity="0.4"/><rect x="2" y="2" width="16" height="8" rx="1.5" fill="#23233C"/><path d="M23 4v4" stroke="#23233C" stroke-width="1.2"/></svg>
+      </span>
+    </div>
+
+    <div class="screen">
+      <div class="content">
+        <div class="dash-header">
+          <div>
+            <div class="eyebrow">Overview</div>
+            <h1 class="dash-welcome">Welcome</h1>
+            <p class="dash-sub">Good morning, Richard</p>
+          </div>
+          <div class="avatar">R</div>
+        </div>
+
+        <div class="stat-card" data-od-id="balance-card">
+          <div class="eyebrow">Monthly expenses</div>
+          <div class="stat-value">1,345.00€</div>
+          <span class="trend-badge">▲ 8.2%</span>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-card" data-od-id="stat-income">
+            <div class="eyebrow">Income</div>
+            <div class="stat-value-sm">3,200€</div>
+          </div>
+          <div class="stat-card" data-od-id="stat-savings">
+            <div class="eyebrow">Savings</div>
+            <div class="stat-value-sm">1,855€</div>
+          </div>
+        </div>
+
+        <div class="quick" data-od-id="quick-categories">
+          <div class="eyebrow-center">Quick categories</div>
+          <div class="quick-grid">
+            <div class="cat-slot" data-od-id="cat-home">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"><path d="M5 17 17 6l12 11"/><path d="M8 15v12h18V15"/></svg>
+            </div>
+            <div class="cat-slot" data-od-id="cat-food">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 9v11a4 4 0 0 0 8 0V9M13 9v8M17 9v8"/><path d="M23 9v15c0 2 2 2 2 0"/></svg>
+            </div>
+            <div class="cat-slot" data-od-id="cat-work">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"><rect x="6" y="10" width="22" height="16" rx="3"/><path d="M12 10V7a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v3M6 17h22"/></svg>
+            </div>
+            <div class="cat-slot" data-od-id="cat-friends">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#000000" stroke-width="1.5"><circle cx="12" cy="11" r="4"/><path d="M5 26c1.5-5 4-7.5 7-7.5S17.5 21 19 26"/><circle cx="23" cy="12" r="3"/><path d="M23 15.5c2.6.3 4.6 2.4 5.5 5.5"/></svg>
+            </div>
+            <div class="cat-slot" data-od-id="cat-shopping">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9h18l-2 14H10z"/><path d="M13 13V8a4 4 0 0 1 8 0v5"/></svg>
+            </div>
+            <div class="cat-slot" data-od-id="cat-fuel">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"><path d="M8 27V7a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v20M6 27h17"/><path d="M21 12h2.5a2 2 0 0 1 2 2v6a2 2 0 0 0 4 0V13M12 8h5"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="tabbar" data-od-id="tabbar">
+      <a class="tab active" href="dashboard.html" data-od-id="tab-home">
+        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3 10.5 11 3l8 7.5"/><path d="M5 9v9h12V9"/></svg>
+        <span class="tab-label">Home</span>
+      </a>
+      <a class="tab" href="money-management.html" data-od-id="tab-money">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3 7l1-4h11l1 4"/><path d="M3 7h13v9H3z"/><path d="M7 16v-5h5v5"/></svg>
+        <span class="tab-label">Money</span>
+      </a>
+      <span class="tab"></span>
+      <a class="tab" href="time-management.html" data-od-id="tab-time">
+        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="4.5" r="3"/><path d="M1.5 17c1-3.5 2.5-5 4.5-5s3.5 1.5 4.5 5"/><path d="M10.5 10l1.5 1.5L15 9"/></svg>
+        <span class="tab-label">Time</span>
+      </a>
+    </nav>
+
+    <a class="fab" href="money-management-expense.html" aria-label="Add expense" data-od-id="fab">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0v20" stroke="#FFFFFF" stroke-width="3"/><path d="M0 10h20" stroke="#FFFFFF" stroke-width="3"/></svg>
+    </a>
+  </div>
+</body>
+</html>

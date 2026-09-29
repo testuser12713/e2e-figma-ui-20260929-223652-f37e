@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Money Management — BusinessHandler</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <div class="statusbar">
+      <span class="time">9:41</span>
+      <span class="status-icons">
+        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" stroke="#23233C" stroke-width="1.2"><path d="M1 8h2.5M3.5 5.5H7M6 3h3M9 8h2.5M11.5 5.5H15M13 3h3"/></svg>
+        <svg width="16" height="11" viewBox="0 0 16 11" fill="none" stroke="#23233C" stroke-width="1.2"><path d="M1 3.5a10 10 0 0 1 14 0M3.5 6a6 6 0 0 1 9 0M6 8.5a3 3 0 0 1 4 0"/><circle cx="8" cy="10" r="0.8" fill="#23233C"/></svg>
+        <svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="#23233C" stroke-opacity="0.4"/><rect x="2" y="2" width="16" height="8" rx="1.5" fill="#23233C"/><path d="M23 4v4" stroke="#23233C" stroke-width="1.2"/></svg>
+      </span>
+    </div>
+
+    <div class="screen">
+      <div class="topbar" data-od-id="topbar">
+        <a class="icon-btn" href="dashboard.html" aria-label="Back">
+          <svg width="11" height="18" viewBox="0 0 11 18" fill="none" stroke="#181461" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 1.5 2 9l7.5 7.5"/></svg>
+        </a>
+        <span class="icon-btn" aria-label="Profile">
+          <svg width="27" height="27" viewBox="0 0 27 27" fill="none" stroke="#23233C" stroke-width="1.5"><circle cx="13.5" cy="9.5" r="4.5"/><path d="M5 23c1.5-4.5 4.7-6.5 8.5-6.5S20.5 18.5 22 23"/></svg>
+        </span>
+      </div>
+
+      <div class="hero-green" data-od-id="hero">
+        <svg width="300" height="180" viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="30" r="80" fill="#FFFFFF" opacity="0.07"/>
+          <circle cx="290" cy="150" r="90" fill="#FFFFFF" opacity="0.06"/>
+          <g opacity="0.95" transform="rotate(-8 150 90)">
+            <rect x="60" y="55" width="180" height="112" rx="16" fill="#FFFFFF"/>
+            <rect x="76" y="74" width="34" height="24" rx="5" fill="#61D27C"/>
+            <path d="M76 122h120" stroke="#23233C" stroke-width="7" opacity="0.18" stroke-linecap="round"/>
+            <path d="M76 140h70" stroke="#23233C" stroke-width="7" opacity="0.12" stroke-linecap="round"/>
+          </g>
+          <circle cx="250" cy="150" r="24" fill="#FFFFFF" opacity="0.95"/>
+          <circle cx="250" cy="150" r="16" fill="none" stroke="#179F2F" stroke-width="2" opacity="0.55"/>
+          <circle cx="226" cy="138" r="18" fill="#FFFFFF" opacity="0.85"/>
+          <circle cx="226" cy="138" r="11" fill="none" stroke="#179F2F" stroke-width="2" opacity="0.45"/>
+        </svg>
+      </div>
+
+      <div class="content">
+        <div class="eyebrow" style="margin-top: 8px;">Monthly expenses</div>
+        <div class="stat-value">1,345.00€</div>
+
+        <div class="eyebrow-center" style="margin-top: 34px;">Weekly report</div>
+        <div class="barchart" data-od-id="weekly-chart">
+          <div class="bar"><div class="deposit" style="height:100px"></div><div class="rest" style="height:30px"></div><div class="expense" style="height:90px"></div></div>
+          <div class="bar"><div class="deposit" style="height:80px"></div><div class="rest" style="height:20px"></div><div class="expense" style="height:120px"></div></div>
+          <div class="bar"><div class="deposit" style="height:100px"></div><div class="rest" style="height:40px"></div><div class="expense" style="height:80px"></div></div>
+          <div class="bar"><div class="deposit" style="height:50px"></div><div class="rest" style="height:30px"></div><div class="expense" style="height:140px"></div></div>
+          <div class="bar"><div class="deposit" style="height:100px"></div><div class="rest" style="height:20px"></div><div class="expense" style="height:100px"></div></div>
+          <div class="bar"><div class="deposit" style="height:80px"></div><div class="rest" style="height:30px"></div><div class="expense" style="height:110px"></div></div>
+          <div class="bar"><div class="deposit" style="height:70px"></div><div class="rest" style="height:20px"></div><div class="expense" style="height:130px"></div></div>
+        </div>
+        <div class="legend">
+          <span class="legend-item"><span class="legend-sq expense"></span>expenses</span>
+          <span class="legend-item"><span class="legend-sq deposit"></span>deposit</span>
+        </div>
+
+        <div class="section-label">Transactions</div>
+
+        <a class="txn" href="money-management-expense.html" data-od-id="txn-movie">
+          <span class="txn-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#23233C" stroke-width="1.5" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M7 5l2 4M12 5l2 4M17 5l2 4M9 15l3-2 3 2v2H9z"/></svg>
+          </span>
+          <span class="txn-body">
+            <span class="txn-eyebrow">Movie</span>
+            <span class="txn-title">Cinema</span><br>
+            <span class="txn-date">02- Monday</span>
+          </span>
+          <span class="txn-amount">23.00€</span>
+        </a>
+
+        <a class="txn" href="money-management-expense.html" data-od-id="txn-grocery">
+          <span class="txn-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#23233C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2 10h9l2-7H6"/><circle cx="9" cy="18" r="1.5"/><circle cx="15" cy="18" r="1.5"/></svg>
+          </span>
+          <span class="txn-body">
+            <span class="txn-eyebrow">Grocery</span>
+            <span class="txn-title">Supermarket</span><br>
+            <span class="txn-date">03- Tuesday</span>
+          </span>
+          <span class="txn-amount">45.80€</span>
+        </a>
+
+        <a class="txn" href="money-management-expense.html" data-od-id="txn-transport">
+          <span class="txn-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#23233C" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="16" height="13" rx="2"/><path d="M4 10h16M8 16v2M16 16v2M7 7h10"/></svg>
+          </span>
+          <span class="txn-body">
+            <span class="txn-eyebrow">Transport</span>
+            <span class="txn-title">Train ticket</span><br>
+            <span class="txn-date">04- Wednesday</span>
+          </span>
+          <span class="txn-amount">12.50€</span>
+        </a>
+
+        <a class="txn" href="money-management-expense.html" data-od-id="txn-coffee">
+          <span class="txn-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#23233C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h8v5a4 4 0 0 1-8 0zM13 9h2.5a2 2 0 0 1 0 4H13M7 5V3M11 5V3"/></svg>
+          </span>
+          <span class="txn-body">
+            <span class="txn-eyebrow">Coffee</span>
+            <span class="txn-title">Café</span><br>
+            <span class="txn-date">05- Thursday</span>
+          </span>
+          <span class="txn-amount">4.20€</span>
+        </a>
+      </div>
+    </div>
+
+    <nav class="tabbar" data-od-id="tabbar">
+      <a class="tab" href="dashboard.html" data-od-id="tab-home">
+        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3 10.5 11 3l8 7.5"/><path d="M5 9v9h12V9"/></svg>
+        <span class="tab-label">Home</span>
+      </a>
+      <a class="tab active" href="money-management.html" data-od-id="tab-money">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3 7l1-4h11l1 4"/><path d="M3 7h13v9H3z"/><path d="M7 16v-5h5v5"/></svg>
+        <span class="tab-label">Money</span>
+      </a>
+      <span class="tab"></span>
+      <a class="tab" href="time-management.html" data-od-id="tab-time">
+        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="4.5" r="3"/><path d="M1.5 17c1-3.5 2.5-5 4.5-5s3.5 1.5 4.5 5"/><path d="M10.5 10l1.5 1.5L15 9"/></svg>
+        <span class="tab-label">Time</span>
+      </a>
+    </nav>
+
+    <a class="fab" href="money-management-expense.html" aria-label="Add expense" data-od-id="fab">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0v20" stroke="#FFFFFF" stroke-width="3"/><path d="M0 10h20" stroke="#FFFFFF" stroke-width="3"/></svg>
+    </a>
+  </div>
+</body>
+</html>
