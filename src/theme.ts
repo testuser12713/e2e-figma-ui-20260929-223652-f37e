@@ -31,6 +31,7 @@ export const colors = {
   facebook: '#0F279E',
   error: '#C48B30',
   success: '#179F2F',
+  black: '#000000',
 } as const;
 
 export const spacing = {

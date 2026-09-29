@@ -173,14 +173,14 @@ const styles = StyleSheet.create({
   },
   summaryLabel: {
     ...typography.text12,
-    color: colors.fgStrong,
+    color: colors.black,
   },
   summaryAmount: {
     fontFamily: fontFamily.body,
     fontWeight: '500',
     fontSize: 45,
     lineHeight: 57,
-    color: colors.fgStrong,
+    color: colors.black,
     marginTop: spacing.space1,
   },
   list: {
@@ -212,25 +212,25 @@ const styles = StyleSheet.create({
   rowCategory: {
     ...typography.text9,
     letterSpacing: 1.8,
-    color: '#000000',
+    color: colors.black,
   },
   rowTitle: {
     fontFamily: fontFamily.body,
     fontWeight: '100',
     fontSize: 12,
     lineHeight: 15,
-    color: '#000000',
+    color: colors.black,
   },
   rowDate: {
     ...typography.text9,
-    color: '#000000',
+    color: colors.black,
   },
   rowAmount: {
     fontFamily: fontFamily.body,
     fontWeight: '100',
     fontSize: 14,
     lineHeight: 18,
-    color: '#000000',
+    color: colors.black,
   },
   fabWrap: {
     position: 'absolute',
