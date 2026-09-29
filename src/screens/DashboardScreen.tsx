@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { colors, spacing, typography } from '../theme';
+import { colors, radii, spacing, typography } from '../theme';
 
 const DashboardScreen: React.FC = () => {
   const insets = useSafeAreaInsets();
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   button: {
     marginTop: spacing.space4,
     backgroundColor: colors.accent,
-    borderRadius: 5,
+    borderRadius: radii.md,
     minHeight: 44,
     paddingHorizontal: spacing.space4,
     alignItems: 'center',
